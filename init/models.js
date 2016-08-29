@@ -8,4 +8,3 @@ require('glob').sync('!(node_modules)/**/model.js').forEach((path) => {
   console.log(path);
   require('../'+path)(mongoose, models);
 });
-console.log('done');
